@@ -62,13 +62,3 @@ function menTog() {
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800
 });
-
-// Fetch bio from local txt file and apply it to the website
-fetch("bio.txt")
-  .then(res => {
-    return res.text();
-  })
-  .then(data => {
-    console.log(data);
-    biography.innerText = data;
-  });
