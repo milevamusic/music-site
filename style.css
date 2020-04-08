@@ -1,0 +1,811 @@
+/* Global settings */
+
+@font-face{
+    src: url('fonts/Abys-Regular.otf');
+    font-family: abys;
+
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+    font-family: abys;
+
+}
+
+h1 a{
+    font-family: abys;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.social-media{
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    height: 3rem;
+    text-align: center; 
+}
+
+.nav-social-media{
+    display: none;
+}
+
+.social-media a{
+    color: black;
+    font-size: 1.5rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.social-media a:hover{
+    opacity: .7;
+
+}
+
+a{
+    color:rgb(243, 159, 197);
+}
+
+a:hover{
+transition: all 0.5s;
+opacity: .7;
+}
+
+body{
+    height: 100%;
+    width: 100%;  
+}
+
+.bg-pic:after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/bg-design-2.jpg);
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+}
+
+ /* Navigation */
+
+ .logo{
+     position: relative;
+     top: 0.2rem;
+     left: 1rem;
+     font-family: abys;
+ }
+
+ .bio-header{
+     font-family: abys;
+     text-align: center;
+     font-size: 2.2rem;
+     letter-spacing: .2rem;
+     color:rgb(243, 159, 197);
+ }
+
+ nav.scrolled{
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 4rem;
+    background-color:black;
+    transition: all .5s;
+}
+
+nav .logo a{
+    color: black;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+nav{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 4rem;
+    border-bottom:2px solid rgb(0, 0, 0,0.3);
+    transition: all .5s;
+}
+
+nav ul{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    list-style: none;
+    float: right;
+
+}
+
+
+nav ul li a{
+    margin-left: 2rem;
+    color: rgb(0, 0, 0);  
+    font-weight: 900;
+    
+}
+nav.scrolled ul li a{
+    color: rgb(243, 159, 197);
+    
+}
+
+nav.scrolled .logo a{
+    color: rgb(243, 159, 197);
+}
+
+nav ul li a:hover{
+    color: black;
+    opacity: 0.8
+}
+
+nav.scrolled ul li a:hover{
+    color: rgb(243, 159, 197);
+    opacity: 0.8
+}
+
+/* Home */
+
+.home{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+.contact{
+    height: 100%;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( rgb(243, 159, 197),rgba(228, 137, 231, 0.336), rgb(243, 159, 197));
+    opacity: .7;
+    overflow: hidden;
+
+
+}
+
+.youtube{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 1rem;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000;
+    background: #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+}
+
+section{
+    padding-top: 4rem;
+}
+
+/* About */
+
+.about{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+
+
+}
+
+
+.bio{
+    position: absolute;
+    width: 80%;
+    padding:1rem;
+    height: 60vh;
+    top: 20%;
+    left: 50%;
+    opacity: 0.9;
+    transform: translate(-50%);
+    background: #000;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+    color: white;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+
+/* Tour */
+
+.tour{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.dates{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20%;
+    height: 80%;
+    width: 90%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.865);
+    z-index: 200;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+}
+
+/* Side Projects */
+
+.side-projects{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.soundcloud{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    width: 100%;
+    text-align: center;
+    height: 60rem;
+    padding: 1rem;
+    
+
+}
+
+.soundcloud iframe{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+
+}
+
+
+/* Press / Photos */
+
+.press{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 180vh;
+}
+
+
+.container{
+    position: relative;
+    top: 5vh;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background: #000;
+    opacity: 0.95;
+    z-index: 10;
+    border: 10px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.753);
+
+}
+
+.image-copy{
+    text-align: center;
+    color: white;
+    opacity: .7;
+    font-size: .7rem;
+}
+.main-img img{
+    position: absolute;
+    top:1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 50%;
+    opacity: 1;
+   
+}
+
+.left-arrow{
+    position: absolute;
+    top: 28%;
+    left: 30px;
+    width: 50px;
+    height: 100px;
+    z-index: 9999;
+    cursor: pointer;
+
+}
+.right-arrow{
+    position: absolute;
+    top: 28%;
+    right: 30px;
+    width: 50px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.left-arrow img:hover, .right-arrow img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0
+    }to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+
+}
+
+
+
+.contact{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.contact-div{
+    position: absolute;
+    text-align: center;
+    opacity: 0.9;
+    top: 20%;
+    width: 80%;
+    padding:1rem;
+    height: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #000;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+    color: white;
+}
+
+.contact-div a i {
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.email{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.email:hover{
+    color: rgb(243, 159, 197);
+    opacity: 1;
+}
+
+footer{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: #000;
+    color: rgb(243, 159, 197);
+    text-align: center;
+    padding: 1rem;
+}
+footer a{
+    margin: .5rem;
+    font-size: 1rem;
+    color: rgb(243, 159, 197);
+}
+.footer-social-media{
+    margin-top:1rem; 
+}
+
+#mc-embedded-subscribe-form{
+    background: #FF69B3;
+}
+
+input.button{
+    background: black;
+}
+
+#mc-embedded-subscribe { 
+    background-color: black !important; 
+    color: #FF69B3 !important;
+}
+#mc-embedded-subscribe:hover { opacity: 0.8; !important; }
+
+/* Media queries */
+
+@media screen and (max-width: 780px) {
+h1 a{
+    font-family: abys;
+}
+
+.social-media{
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+}
+
+nav{
+    position: fixed;
+    z-index: -200;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    transition: all 0.5s;
+  }
+
+  nav.scrolled{
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    transition: all .5s;
+}
+
+  .video{
+      width: 80%;
+      height: 80%
+  }
+
+  nav .logo a{
+      color: rgb(243, 159, 197);
+  }
+  nav.active{
+    position: fixed;
+    z-index: 9000;
+    opacity: 1;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    transition: all 0.5s;
+}
+  nav ul{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    display: block;
+    left: 0;
+    top: 50%;
+    text-align: center;
+  }
+
+  nav ul li{
+      margin-top:2rem;
+  }
+.menu-toggle{
+    position: fixed;
+    z-index: 9999;
+    width: 40px;
+    height:30px;
+    left: 1rem;
+    top:1.5rem;
+    cursor: pointer;
+}
+
+
+.menu-toggle span{
+    width: 35px;
+    height: 3px;
+    margin-top: 2px;
+    background: rgb(243, 159, 197);
+    display: block;
+    transition: all 0.3s;
+}
+
+.navigation ul li a{
+    color: rgb(243, 159, 197);
+}
+.navigation ul li a:hover{
+    color: rgb(243, 159, 197);
+}
+.menu-toggle.active{
+    position: fixed;
+    z-index: 9999;
+    width: 40px;
+    height: 30px;
+    left: 1rem;
+    top:1.5rem;
+    transform: rotate(180deg);
+    transform: translateY(5px);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.menu-toggle.active span{
+    width: 35px;
+    height: 3px;
+    margin-top: 2px;
+    background: rgb(243, 159, 197);
+    display: block;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    position: fixed;
+    z-index: 9999;
+    width: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    position: fixed;
+    z-index: 9999;
+    width: 35px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    position: fixed;
+    z-index: 9999;
+    width: 35px;
+    transform: rotate(135deg);
+    cursor: pointer;
+    transition: all 0.5s;}
+
+.mobile-nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height:4rem;
+    top: 0;
+    background: #000;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    z-index: 900;
+    opacity: 0.98;
+}
+
+.mobile-logo a{
+    color: rgb(243, 159, 197);
+}
+
+.mobile-logo{
+    position: relative;
+    margin-top:0.2rem;
+    text-align: center;
+    font-family: abys;
+}
+
+.nav-social-media{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height:2rem;
+    top: 80%;
+    display: inline-block;
+    background: #000;
+}
+
+.nav-social-media a{
+    color: rgb(243, 159, 197);
+    font-size: 1.2rem !important;
+    margin: 1rem;
+
+    
+}
+.nav-social-media a:hover{
+    opacity: 0.7;
+}
+
+
+.bio{
+    font-size: 0.7rem;
+}
+
+.tour{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+   
+}
+
+.dates{
+    position: absolute;
+    top: 10%;
+    height: 90%;
+}
+
+.logo{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+
+  }
+  nav ul li a{
+    margin-left: 0;
+    font-size: .8rem;  
+}
+.social-media{
+    margin-top: 2rem;
+}
+.social-media a{
+    font-size: 1.5rem;
+}
+
+
+.container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-img img{
+    width: 110%;
+    margin-top: 1rem;
+}
+
+.left-arrow{
+    position: absolute;
+    top: 28%;
+    left: 30px;
+    width: 20px;
+    height: 40px;
+    z-index: 9999;
+
+}
+.right-arrow{
+    position: absolute;
+    top: 28%;
+    right: 30px;
+    width: 20px;
+    height: 40px;
+
+}
+
+.left-arrow img, .right-arrow img{
+    width: 20px
+}
+
+.left-arrow img:hover, .right-arrow img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+}
+
+@media screen and (max-width: 450px) {
+  .bio p{
+        font-size: .8rem;
+    }
+    .bio{
+        position: absolute;
+        width: 80%;
+        padding:1rem;
+        height: 80vh;
+        top: 10%;
+        left: 50%;
+        font-size: 0.6rem;
+        transform: translate(-50%);
+        opacity: .9;
+    }
+
+
+    .container{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    .left-arrow{
+        position: absolute;
+        top: 28%;
+        left: 15px;
+        width: 20px;
+        height: 40px;
+        z-index: 9999;
+    
+    }
+    .right-arrow{
+        position: absolute;
+        top: 28%;
+        right: 15px;
+        width: 20px;
+        height: 40px;
+    
+    }
+
+    .main-img img{
+        width: 150%;
+        margin-top: 1rem;
+    }
+
+    .tour{
+        height: 120vh;
+
+    }
+
+    .side-projects{
+        height:100vh;
+    }
+
+    .press{
+        height: 120vh;
+    }
+
+    .contact{
+        height:80vh;
+    }
+
+    .contact-div{
+        position: absolute;
+        top: 15%;
+        width: 80%;
+        padding:1rem;
+        height: 80%;
+        left: 50%;
+        transform: translate(-50%);
+        opacity: .9;
+    }
+
+}
