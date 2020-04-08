@@ -329,6 +329,14 @@ section{
 
 }
 
+.gallery{
+    position: absolute;
+    left: 15%;
+    color:rgb(243, 159, 197);
+    font-size: 2rem;
+    z-index: 9999;
+}
+
 .photos{
     position: absolute;
     width: 60%;
@@ -713,37 +721,6 @@ nav{
 
 }
 
-/* .left-arrow{
-    position: absolute;
-    top: 28%;
-    left: 30px;
-    width: 20px;
-    height: 40px;
-    z-index: 9999;
-    
-
-}
-
-.left-arrow i{
-    color: rgb(243, 159, 197);
-}
-.right-arrow{
-    position: absolute;
-    top: 28%;
-    right: 30px;
-    width: 20px;
-    height: 40px;
-
-}
-
-.left-arrow img, .right-arrow img{
-    width: 20px
-}
-
-.left-arrow img:hover, .right-arrow img:hover{
-    cursor: pointer;
-    opacity: 0.7;
-} */
 
 
 }
@@ -783,24 +760,6 @@ nav{
         transform: translate(-50%);
     
     }
-
-    /* .left-arrow{
-        position: absolute;
-        top: 28%;
-        left: 15px;
-        width: 20px;
-        height: 40px;
-        z-index: 9999;
-    
-    }
-    .right-arrow{
-        position: absolute;
-        top: 28%;
-        right: 15px;
-        width: 20px;
-        height: 40px;
-    
-    } */
 
     .main-img img{
         position: absolute;
