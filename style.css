@@ -240,6 +240,7 @@ section{
     border: 1px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
     color: white;
+    border-radius: 10px;
     /* font-family: 'Montserrat', sans-serif; */
 }
 
@@ -412,6 +413,7 @@ section{
     border: 1px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
     color: white;
+    border-radius: 10px;
 }
 
 .contact-div a i {
