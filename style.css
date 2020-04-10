@@ -87,6 +87,7 @@ body{
 
  .bio-header{
      font-family: abys;
+     margin-bottom: 1.5rem;
      text-align: center;
      font-size: 2.2rem;
      letter-spacing: .2rem;
@@ -101,6 +102,7 @@ body{
     width: 100%;
     height: 4rem;
     background-color:black;
+    opacity: 0.8;
     transition: all .5s;
 }
 
@@ -201,7 +203,7 @@ nav.scrolled ul li a:hover{
 .video{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     margin-top: 1rem;
     transform: translate(-50%, -50%);
     border: 5px solid #000;
@@ -231,9 +233,9 @@ section{
     width: 80%;
     padding:1rem;
     height: 60vh;
-    top: 20%;
+    top: 25%;
     left: 50%;
-    opacity: 0.9;
+    opacity: 0.8;
     transform: translate(-50%);
     background: #000;
     overflow: hidden;
@@ -261,7 +263,7 @@ section{
     left: 50%;
     transform: translate(-50%);
     top: 20%;
-    height: 80%;
+    height: 70%;
     width: 90%;
     z-index: 3;
     background: rgba(0, 0, 0, 0.865);
@@ -284,7 +286,7 @@ section{
 
 .soundcloud{
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-30%);
     width: 100%;
     text-align: center;
@@ -407,8 +409,8 @@ section{
 .contact-div{
     position: absolute;
     text-align: center;
-    opacity: 0.9;
-    top: 20%;
+    opacity: 0.8;
+    top: 25%;
     width: 80%;
     padding:1rem;
     height: 60%;
@@ -498,10 +500,12 @@ nav{
     height: 100vh;
     background-color:black;
     transition: all 0.5s;
+    opacity: 0.8;
   }
 
   nav.scrolled{
     position: fixed;
+    opacity: 0.8;
     z-index: -100;
     width: 100%;
     height: 100vh;
@@ -619,11 +623,12 @@ nav{
     position: fixed;
     width: 100%;
     height:4rem;
+    opacity: 0.8;
     top: 0;
     background: #000;
     border-bottom: 1px solid rgba(0,0,0,1);
     z-index: 900;
-    opacity: 0.98;
+    opacity: 0.8;
 }
 
 .mobile-logo a{
@@ -708,7 +713,7 @@ nav{
 .main-img img{
     left: 0;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .photos{
@@ -738,7 +743,7 @@ nav{
         left: 50%;
         font-size: 0.6rem;
         transform: translate(-50%);
-        opacity: .9;
+        opacity: .8;
     }
     
 
@@ -764,7 +769,7 @@ nav{
     .main-img img{
         position: absolute;
         width: 150%;
-        margin-top: 1rem;
+        margin-top: 2.5rem;
         left: 50%;
         transform: translate(-50%)
     }
@@ -794,7 +799,7 @@ nav{
         height: 80%;
         left: 50%;
         transform: translate(-50%);
-        opacity: .9;
+        opacity: .8;
     }
 
 }
