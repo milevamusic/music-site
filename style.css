@@ -732,7 +732,7 @@ nav{
 
 @media screen and (max-width: 450px) {
   .bio p{
-        font-size: .8rem;
+        font-size: 0.9rem;
     }
     .bio{
         position: absolute;
@@ -741,7 +741,7 @@ nav{
         height: 80vh;
         top: 10%;
         left: 50%;
-        font-size: 0.6rem;
+        font-size: 1rem;
         transform: translate(-50%);
         opacity: .8;
     }
@@ -775,7 +775,8 @@ nav{
     }
 
     .tour{
-        height: 120vh;
+        height: 90vh;
+        border-radius: 10px; 
 
     }
 
@@ -783,8 +784,23 @@ nav{
         height:100vh;
     }
 
+    .soundcloud{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-30%);
+        width: 100%;
+        text-align: center;
+        height: 80rem;
+        padding: 1rem;
+    
+    }
+
     .press{
-        height: 120vh;
+        height: 100vh;
+    }
+
+    .container{
+        top: 15vh
     }
 
     .contact{
